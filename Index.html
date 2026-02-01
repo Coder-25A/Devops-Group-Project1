@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📰 News App</h1>
+
+    <div class="theme-toggle">
+        <button id="themeBtn">🌙 Dark Mode</button>
+    </div>
+</header>
+
+<nav class="categories">
+    <button class="tab active" data-cat="">All</button>
+    <button class="tab" data-cat="technology">Technology</button>
+    <button class="tab" data-cat="sports">Sports</button>
+    <button class="tab" data-cat="politics">Politics</button>
+    <button class="tab" data-cat="business">Business</button>
+    <button class="tab" data-cat="health">Health</button>
+</nav>
+
+<section id="news-container"></section>
+
+<div id="loader">Loading...</div>
+
+<!-- Popup Article -->
+<div id="popup" class="popup hidden">
+    <div class="popup-content">
+        <button id="closePopup">✖</button>
+        <h2 id="pop-title"></h2>
+        <img id="pop-img" />
+        <p id="pop-desc"></p>
+        <a id="pop-link" target="_blank">Read Full Article</a>
+    </div>
+</div>
+
+<script src="theme.js"></script>
+<script src="popup.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
